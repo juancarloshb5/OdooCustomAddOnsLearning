@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="ventanas.list">
+      <field name="name">ventanas list</field>
+      <field name="model">ventanas.ventanas</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+
+    <!-- <record model="ir.actions.act_window" id="ventanas.action_window">
+      <field name="name">ventanas window</field>
+      <field name="res_model">ventanas.ventana</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem name="ventanas" id="ventanas.menu_root" action="ventanas.action_window"/> -->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="ventanas.action_server">
+      <field name="name">ventanas server</field>
+      <field name="model_id" ref="model_ventanas_ventanas"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+
+   
+
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="ventanas.menu_1" parent="ventanas.menu_root"/>
+    <menuitem name="Menu 2" id="ventanas.menu_2" parent="ventanas.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="ventanas.menu_1_list" parent="ventanas.menu_1"
+              action="ventanas.action_window"/>
+    <menuitem name="Server to list" id="ventanas" parent="ventanas.menu_2"
+              action="ventanas.action_server"/>
+-->
+  </data>
+</odoo>
